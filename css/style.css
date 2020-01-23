@@ -1,0 +1,373 @@
+/* 
+    blue - background-color: rgba(15, 76, 129, 1);
+    mint - background-color: rgba(‎170, 240, 209, 1);
+    yellow - rgba(190, 164, 48, 1);
+ */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+div#wrap {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+section#home {
+    position: relative;
+    height: 100vh;
+    background-color: #1a1a1a;
+}
+
+section#home>div.home-txt-box {
+    width: 100%;
+    padding: 0px 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+section#home>div.home-txt-box>h1 {
+    font-size: 3em;
+}
+
+section#home>div.home-txt-box>h2 {
+    font-size: 1rem;
+    line-height: 5;
+}
+
+nav {
+    background: #000;
+    padding: 16px;
+    text-align: center;
+    z-index: 9999;
+    border-top: 1px solid #fff;
+}
+
+nav.sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0vh;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+#about {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+section#about>div.about-img {
+    width: 50%;
+    height: 70vh;
+    float: left;
+    transition: .2s linear all;
+    background-color: #000;
+}
+
+section#about>div.about-img>img {
+    width: 100%;
+    height: auto;
+}
+
+section#about>div.about-txt {
+    width: 50%;
+    height: 70vh;
+    float: right;
+    padding: 6vw 10vw;
+    background-color: #fff;
+    color: #1a1a1a;
+    transition: .2s linear all;
+}
+
+section#about>div.about-txt>h2 {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 2;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+section#about>div.about-txt>ul {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    font-weight: 500;
+    list-style-type: square;
+}
+
+section#about>div.about-txt>ul::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    padding-right: 10px;
+}
+
+section#about>div.about-txt>ul>li {
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+section#about>div.about-txt>ul>li::before {
+    content: '-';
+    padding-right: 10px;
+}
+
+section#skills {
+    clear: both;
+    width: 100%;
+    height: 60vh;
+    background: #000;
+    position: relative;
+}
+.content-tit>h2{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+    height: 5vh;
+    padding-top: 20px;
+}
+.radialBar {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+
+#container_1,
+#container_2,
+#container_3,
+#container_4,
+#container_5,
+#container_6 {
+    position: relative;
+    width: 10%;
+}
+
+#container_1>p,
+#container_2>p,
+#container_3>p,
+#container_4>p,
+#container_5>p,
+#container_6>p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+section#portfolio{
+    width: 100%;
+    height: 100vh;
+    background: green;
+    position: relative;
+}
+section#portfolio>div.slider{
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 60vh;
+    background: #fff;
+    overflow: hidden;
+}
+section#portfolio>div.slider>div.first-img{
+    width: 600px;
+}
+section#portfolio>div.slider>div.first-img>img{
+    width: 500px;
+}
+.slick-arrow{ z-index: 2; /* prev버튼은 위치 이동시 이미지 뒤로 숨겨짐 */ position:absolute; /* 원하는 위치에 지정 */ top: 50%; width: 50px; height: 50px; transform: translateY(-25px); } .slick-prev.slick-arrow{ /* prev 이전 */ left: 0; } .slick-next.slick-arrow{ /* next 다음 */ right: 0; } /* 아래점 */ .slick-dots{ text-align: center; } .slick-dots li{ display: inline-block; margin: 0 5px; }
+
+section#contact{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/dark-gold-lamp-light-284951.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+section#contact>div.content-txt{
+    position: absolute;
+    left: 68%; top: 70%;
+    transform: translate(-68%, -70%);
+    text-align: center;
+    /* background: #fff; */
+}
+section#contact>div.content-txt>h3{
+    font-size: 2em;
+    color: #000;
+    text-shadow: 0px 8px 10px 0px #fff;
+    margin-bottom: 50px;
+}
+section#contact>div.content-txt>div.content-txt-svg{
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+}
+section#contact>div.content-txt>div.content-txt-svg p{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+section#contact>div.content-txt>div.content-txt-svg>div.first-svg{
+    margin-right: 50px;
+    margin-left: 60px;
+}
+section#contact>div.content-txt>div.content-txt-svg>div>p:nth-child(1){
+    padding-bottom: 20px;
+}
+section#contact>div.content-txt>div.content-txt-svg>div>p:nth-child(3){
+    padding-top: 20px;
+}
+@media(max-width: 768px) {
+    nav a {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    section#home>div.home-txt-box>h1 {
+        font-size: 1.5em;
+    }
+
+    section#about>div.about-img {
+        width: 100%;
+        height: 40vh;
+        transition: .2s linear all;
+    }
+
+    section#about>div.about-img>img {
+        width: 100%;
+        height: 100%;
+    }
+
+    section#about>div.about-txt {
+        width: 100%;
+        height: auto;
+        float: right;
+        padding: 6vw 10vw;
+        color: #1a1a1a;
+        transition: .2s linear all;
+    }
+    .radialBar {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 33.33%);
+        grid-template-rows: repeat(3, auto);
+        color: #fff;
+        transition: .2s linear all;
+    }
+    #container_1,
+    #container_2,
+    #container_3,
+    #container_4,
+    #container_5,
+    #container_6 {
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+    }
+    #container_1,
+    #container_2,
+    #container_3 {
+        margin-bottom: 20px;
+    }
+
+    #container_1>p,
+    #container_2>p,
+    #container_3>p,
+    #container_4>p,
+    #container_5>p,
+    #container_6>p {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+@media(min-width: 769px) and (max-width: 991px) {
+    .radialBar {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 33.33%);
+        grid-template-rows: repeat(3, auto);
+        color: #fff;
+        transition: .2s linear all;
+    }
+
+    #container_1,
+    #container_2,
+    #container_3,
+    #container_4,
+    #container_5,
+    #container_6 {
+        position: relative;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #container_1,
+    #container_2,
+    #container_3 {
+        margin-bottom: 20px;
+    }
+
+    #container_1>p,
+    #container_2>p,
+    #container_3>p,
+    #container_4>p,
+    #container_5>p,
+    #container_6>p {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
